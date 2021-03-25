@@ -13,7 +13,7 @@ def index(request):
     w = []
     l = []
     
-    tree = etree.parse("http://test.lengow.io/orders-test.xml")
+    tree = etree.parse("http://test/orders-test.xml")
 
     for order1 in tree.xpath("/statistics/orders/order/marketplace"):
         x.append(order1.text)
